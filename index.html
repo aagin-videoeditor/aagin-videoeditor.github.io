@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Aagin Kavalloor</title>
-<link rel="icon" sizes="32x32" href="/fav.png">
+        <link rel="icon" sizes="32x32" href="/fav.png">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./dark_portfolio_files/w3.css">
         <link rel="stylesheet" href="./dark_portfolio_files/css">
         <link rel="stylesheet" href="./dark_portfolio_files/font-awesome.min.css">
+        
+        <link rel="stylesheet" href="css/video.css">
+        
         <script src="//code.angularjs.org/snapshot/angular.min.js"></script>
         <script src="//code.angularjs.org/snapshot/angular-sanitize.js"></script>
         <style>
@@ -150,7 +153,7 @@
                         I'm </span> Aagin Kavalloor
                 </h1>
                 <p>
-                   
+
                     VIDEO EDITOR |
                     PHOTOGRAPHER |
                     MOTION-GRAPHICS ARTIST  |
@@ -160,14 +163,18 @@
                 <!--<img src="./dark_portfolio_files/profile_pic_1_black.jpg" alt="boy" class="w3-image" width="992" height="1108">-->
             </header>
 
+         
+
+
+
             <!-- About Section -->
             <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
                 <h2 class="w3-text-light-grey">About Me</h2>
                 <hr style="width:200px" class="w3-opacity">
                 <p>
-                   Creative Video Editor and Multimedia professional with experience in remote post-production and
-digital storytelling. Specialized in high-impact visual content, cinematic animated sequences, and
-professional branding assets.
+                    Creative Video Editor and Multimedia professional with experience in remote post-production and
+                    digital storytelling. Specialized in high-impact visual content, cinematic animated sequences, and
+                    professional branding assets.
 
                 </p>
                 <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
@@ -253,15 +260,15 @@ professional branding assets.
 
                 <div class="w3-section">
                     <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> 
-                       Thrissur-Kerala-India
+                        Thrissur-Kerala-India
                     </p>
                     <a href="tel:9633544170" style="text-decoration: none">
-                    <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> 
-                        9633544170
-                    </p>
+                        <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> 
+                            9633544170
+                        </p>
                     </a>
                     <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> 
-                       aaginkavalloorpro@gmail.com</p>
+                        aaginkavalloorpro@gmail.com</p>
                 </div><br>
 
                 <!-- End Contact Section -->
@@ -272,17 +279,33 @@ professional branding assets.
             <div class="w3-padding-64 w3-content w3-text-grey" id="projects">
                 <h2 class="w3-text-light-grey">My Projects</h2>
                 <hr style="width:200px" class="w3-opacity">
+                
+                
+                
+                 <div class="video-container">
+                <a href="https://www.behance.net/gallery/247079825/iPhone-17-Concept-Advertisement">
+
+                    <img src="image/iPhone  Concept Advertisement Thumbnail.PNG"
+                         style="width: 100%" alt="iphone17"
+                         class="thumbnail">
+                    <!-- Inline SVG Play Button -->
+                    <svg class="play-button" viewBox="0 0 200 200">
+                    <circle cx="100" cy="100" r="90" fill="rgba(0,0,0,0.5)" stroke="#fff" stroke-width="10"/>
+                    <polygon points="70,55 70,145 145,100" fill="#fff"/>
+                    </svg>
+                </a>
+            </div>  
 
 
-                <div ng-repeat="project in projects" class="w3-section">
+<!--                <div ng-repeat="project in projects" class="w3-section">
                     <p>
                         <a href="{{project.url}}" style="text-decoration: none">
-                        <i class="fa fa-archive fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> 
-                        {{project.title}}
+                            <i class="fa fa-archive fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> 
+                            {{project.title}}
                         </a>
                     </p>
 
-                </div>
+                </div>-->
 
                 <br>
 
