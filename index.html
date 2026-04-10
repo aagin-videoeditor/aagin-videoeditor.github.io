@@ -9,8 +9,12 @@
 
         <link rel="stylesheet" href="css/video.css">
 
+        <link rel="stylesheet" href="css/image_grid.css">
+        <script src="js/image_grid.js"></script>
+
         <script src="//code.angularjs.org/snapshot/angular.min.js"></script>
         <script src="//code.angularjs.org/snapshot/angular-sanitize.js"></script>
+
         <style>
             body, h1,h2,h3,h4,h5,h6 {
                 font-family: "Montserrat", sans-serif
@@ -280,40 +284,38 @@
                 <h2 class="w3-text-light-grey">My Projects</h2>
                 <hr style="width:200px" class="w3-opacity">
 
+            <!-- projects as image grid -->
+            
+<!--            <div class="header" id="myHeader">
+                
+                <p>Click on the buttons to change the grid view.</p>
+                <button class="btn" onclick="one()">1</button>
+                <button class="btn active" onclick="two()">2</button>
+                <button class="btn" onclick="four()">4</button>
+            </div>-->
 
-
-                <div ng-repeat="project in projects" class="w3-section">
-                    <div class="video-container" style="width: 200px">
-                        <a href="{{project.url}}">
- <!--{{project.title}}-->
+            <!-- Photo Grid -->
+            <div class="row"> 
+                <div class="column video-container" ng-repeat="project in projects">
+                    <a href="{{project.url}}">
+                            <!--{{project.title}}-->
                             <img src="image/thumbnails/{{project.thumbnail}}"
-                                 style="width: 100%" alt="iphone17"
-                                 class="thumbnail">
+                                 alt="iphone17"
+                                 class="thumbnail"
+                                 >
                             <!-- Inline SVG Play Button -->
                             <svg class="play-button" viewBox="0 0 200 200">
                             <circle cx="100" cy="100" r="90" fill="rgba(0,0,0,0.5)" stroke="#fff" stroke-width="10"/>
                             <polygon points="70,55 70,145 145,100" fill="#fff"/>
                             </svg>
                         </a>
-                    </div>
+<!--                    <img  src="image/thumbnails/{{project.thumbnail}}" style="width:100%" alt="">-->
+                    
                 </div>
+              
 
-
-<!--                <div ng-repeat="project in projects" class="w3-section">
-                    <p>
-                        <a href="{{project.url}}" style="text-decoration: none">
-                            <i class="fa fa-archive fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> 
-                            {{project.title}}
-                        </a>
-                    </p>
-                </div>-->
-
-                <br>
-
-                <!-- End projects Section -->
             </div>
-
-
+            </div>
 
             <!-- Footer -->
             <footer class="w3-content w3-padding w3-text-grey w3-xlarge">
