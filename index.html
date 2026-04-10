@@ -6,9 +6,9 @@
         <link rel="stylesheet" href="./dark_portfolio_files/w3.css">
         <link rel="stylesheet" href="./dark_portfolio_files/css">
         <link rel="stylesheet" href="./dark_portfolio_files/font-awesome.min.css">
-        
+
         <link rel="stylesheet" href="css/video.css">
-        
+
         <script src="//code.angularjs.org/snapshot/angular.min.js"></script>
         <script src="//code.angularjs.org/snapshot/angular-sanitize.js"></script>
         <style>
@@ -163,7 +163,7 @@
                 <!--<img src="./dark_portfolio_files/profile_pic_1_black.jpg" alt="boy" class="w3-image" width="992" height="1108">-->
             </header>
 
-         
+
 
 
 
@@ -279,22 +279,24 @@
             <div class="w3-padding-64 w3-content w3-text-grey" id="projects">
                 <h2 class="w3-text-light-grey">My Projects</h2>
                 <hr style="width:200px" class="w3-opacity">
-                
-                
-                
-                 <div class="video-container">
-                <a href="https://www.behance.net/gallery/247079825/iPhone-17-Concept-Advertisement">
 
-                    <img src="image/iPhone  Concept Advertisement Thumbnail.PNG"
-                         style="width: 100%" alt="iphone17"
-                         class="thumbnail">
-                    <!-- Inline SVG Play Button -->
-                    <svg class="play-button" viewBox="0 0 200 200">
-                    <circle cx="100" cy="100" r="90" fill="rgba(0,0,0,0.5)" stroke="#fff" stroke-width="10"/>
-                    <polygon points="70,55 70,145 145,100" fill="#fff"/>
-                    </svg>
-                </a>
-            </div>  
+
+
+                <div ng-repeat="project in projects" class="w3-section">
+                    <div class="video-container" style="width: 200px">
+                        <a href="{{project.url}}">
+ <!--{{project.title}}-->
+                            <img src="image/thumbnails/{{project.thumbnail}}"
+                                 style="width: 100%" alt="iphone17"
+                                 class="thumbnail">
+                            <!-- Inline SVG Play Button -->
+                            <svg class="play-button" viewBox="0 0 200 200">
+                            <circle cx="100" cy="100" r="90" fill="rgba(0,0,0,0.5)" stroke="#fff" stroke-width="10"/>
+                            <polygon points="70,55 70,145 145,100" fill="#fff"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
 
 
 <!--                <div ng-repeat="project in projects" class="w3-section">
@@ -304,7 +306,6 @@
                             {{project.title}}
                         </a>
                     </p>
-
                 </div>-->
 
                 <br>
